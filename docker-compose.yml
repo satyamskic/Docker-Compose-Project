@@ -1,0 +1,32 @@
+version: '3.1'
+services:
+  dbos:
+    image: mysql:5.7
+    volumes:
+      - mysql_storage_new:/var/lib/mysql
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: rootpass
+        MYSQL_USER: satyam
+        MYSQL_PASSWORD: redhat
+        MYSQL_DATABASE: bcdb
+
+  ghost:
+    image: ghost
+    restart: always
+    ports:
+      - 8080:2368
+    environment:
+      database_client: mysql 
+      database_connection_host: dbos
+      database_connection_user: root
+      database_connection_password: ghost
+      database_connection_database: ghost
+    volumes:
+      - ghost_storage_new:/var/lib/docker/volumes/mycompose_ghost_storage_new/_data
+
+
+volumes:
+  
+  mysql_storage_new:
+  ghost_storage_new:

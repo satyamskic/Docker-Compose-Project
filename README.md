@@ -93,7 +93,7 @@ wikipedia.org/wiki/Ghost_(blogging_platform)
 
 All Ghost configuration parameters can be specified via environment variables. See the **https://ghost.org/docs/concepts/config/#section-running-ghost-with-config-env-variables** for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
 
-#### Note
+### Note
 To know more about ghost please visit site given below
 
 **https://hub.docker.com/_/ghost**
@@ -101,7 +101,7 @@ To know more about ghost please visit site given below
 
 # Docker compose up
 
-**If you want that whenever you want Ghost service locally then you have to write all code again and again, In case of crash or stop working service due to any cause then you again write to full command and again launch service . But this problam can be solved very easily. We can launched both MySQL and ghost by one click. for this , you have to create a file named as *docker-compose.yml* and write your code inside it and run this file by using this command
+**If you want that whenever you want Ghost service locally then you have to write all code again and again, In case of crash or stop working service due to any cause then you again write to full command and again launch service . But this problam can be solved very easily. We can launched both MySQL and ghost by one click. for this , you have to create a file named as *docker-compose.yml* and write your code inside it and run this file by using this command**
    - docker-compose up  
  
 You can create and edit this file using vim editor. For that use **vim docker-compose.yml** . Remember the file name should always be docker-compose.yml.

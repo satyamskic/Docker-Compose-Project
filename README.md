@@ -10,8 +10,9 @@ I have successfully completed the **Docker**  (Part of devops) training under g
 
 
 
-# My Docker project
-I created project based on **Ghost** which is open source **blogging platform**.
+# My project
+I created project based on **Ghost** which is open source **blogging platform**.I created my project inside Docker container on **REDHAT-8 Enterprise Linux** but you can use any OS but few commands might not work properly. I'll also show you how to setup for create this project.
+
 
 
 

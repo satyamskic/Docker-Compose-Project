@@ -24,9 +24,9 @@ It uses popular express that is it's server and for a database you can select be
 
 # Steps you have to follow to setup Environment
 1. First disble/stop **firewall** security in your operating system because it block some network stuffs. But remember that it is not good practice to disabling/stoping security, For stoping firewalld use command 
- - **systemctl stop firewalld**
+     - **systemctl stop firewalld**
 2. Start your Docker
--  **systemctl start docker**
+     -  **systemctl start docker**
 3. Add images of **MySQL** and **Ghost** in your **Docker**. For this....use these commands given below
       -  **docker pull mysql:5.7**
       -  **docker pull ghost:1-alpine**
@@ -66,13 +66,20 @@ Sets root (not the user specified in MYSQL_USER!) user as expired once init is c
 ### General syntax of MySQL
 - docker run -it -e MYSQL_ROOT_PASSWORD=(any password you like) -e MYSQL_USER=(any user name) -e MYSQL_PASSWORD=(any password(recommended not to use root password) -e MYSQL_DATABASE=(any database name) --name dbos(give any container name) mysql:5.7
 ##### Note:- 
-1. you need MySQL client to login inside MySql database then you can install it by using yum/dnf command
+1. you need MySQL client to login inside MySQL database then you can install it by using yum/dnf command
 - dnf install mysql
 2. For cheaking your IP of MySQL use this command
 - docker inspect mysql | grep IP                 
-3. Use this to login inside database
+3. Use this command to login inside database
 - mysql -h **Ip_Of_MySQl** -u **ghost** -p**redhat**     
+### MySQL Volume
+It is always good practice to creating volume of MySQL because it store the data permanent(persistent). If any case you deleted container but you won't loose your databases. 
+Create a data directory on a suitable volume on your host system, e.g. /my/own/datadir.
 
+Start your mysql container like this:
+
+  - $ docker run --name some-mysql -v **/my/own/datadir:/var/lib/mysql** -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+The **-v /my/own/datadir:/var/lib/mysql** part of the command mounts the **/my/own/datadir** directory from the underlying host system as **/var/lib/mysql** inside the container, where MySQL by default will write its data files.
 
 
 

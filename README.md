@@ -82,6 +82,16 @@ Start your mysql container like this:
 
 The **-v /my/own/datadir:/var/lib/mysql** part of the command mounts the **/my/own/datadir** directory from the underlying host system as **/var/lib/mysql** inside the container, where MySQL by default will write its data files.
 
+# USe of ghost image
+**What is ghost**
+Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
+
+wikipedia.org/wiki/Ghost_(blogging_platform)
+
+### Configuration
+
+All Ghost configuration parameters can be specified via environment variables. See the **https://ghost.org/docs/concepts/config/#section-running-ghost-with-config-env-variables** for details about what configuration is allowed and how to convert a nested configuration key into the appropriate environment variable name:
+
 
 
 

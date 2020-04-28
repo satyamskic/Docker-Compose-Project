@@ -108,7 +108,26 @@ To know more about ghost please visit site given below
 You can create and edit this file using vim editor. For that use **vim docker-compose.yml** . Remember the file name should always be docker-compose.yml.
 
 
+## How to write docker-compose.yml file 
 
+**version:**
+- In each version the style and syntax are different. I used version 3.1 cause it's easy to compose than other versions and you have to mention it within sigle cote
+
+**services:**
+In docker-compose.yml file we have to write all services which we want to run by one click only.
+
+**container name:**
+I choose dbos and ghost as name of containers. You can choose your desire name . Docker-compose automatically the name for the containers using our defined container name.
+
+**image and restart:**
+image and restart these two key is used to specify which image we want to use and due to any reason if any of the container stops docker-compose will again restart it.
+
+**volumes:**
+In docker as soon as we terminate an container our whole data inside that container destroyed. But if we want to make our data permanent then we have to use docker volume. Using the last volumes key we at first created two volumes. We know that MySQL and ghost stores their data inside which folder. We simply make those folders permanent by mounting these volumes. That means due to any reason if our container terminated our data will not loose.
+
+**environment:**
+There are many images in Docker which needs some pre-defined environment variables to run. That's why we need to pass these variables.
+Before launch the servies behind the scence, docker-compose runs first script you pass inside environment varriable then it starts our services.
 
 
 

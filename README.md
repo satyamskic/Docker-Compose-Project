@@ -22,5 +22,5 @@ Ghost is a **NodeJS** module for creating Blogs something like WordPress. It's i
 It uses popular express that is it's server and for a database you can select between **SQLite** or **MySQL**. It also has a nice templating enginer called **Handlebars**. In order to word with ghost you just need to know **Markdown**, thats it, nothing else,and if you want to develop application or plugins then you need to know **JavaScript**.
 
 # Steps you have to follow 
-### First disble/stop firewall security in your OS because it block some network stuffs. But remember that it is not good practice to disabling/stoping security. For this use command 
+#### First disble/stop firewall security in your OS because it block some network stuffs. But remember that it is not good practice to disabling/stoping security. For this use command 
  - **systemctl stop firewalld**

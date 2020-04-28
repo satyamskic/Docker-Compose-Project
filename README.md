@@ -84,6 +84,7 @@ The **-v /my/own/datadir:/var/lib/mysql** part of the command mounts the **/my/o
 
 # USe of ghost image
 **What is ghost**
+
 Ghost is a free and open source blogging platform written in JavaScript and distributed under the MIT License, designed to simplify the process of online publishing for individual bloggers as well as online publications.
 
 wikipedia.org/wiki/Ghost_(blogging_platform)
@@ -94,6 +95,7 @@ All Ghost configuration parameters can be specified via environment variables. S
 
 #### Note
 To know more about ghost please visit site given below
+
 **https://hub.docker.com/_/ghost**
 
 

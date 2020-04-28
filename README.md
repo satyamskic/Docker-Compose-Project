@@ -2,11 +2,17 @@
 
 Hi , I'm Satyam Kumar
 
+
+
 I have successfully completed the Docker  Part of devops ) training under guidance of Vimal Daga sir.
+
+
 
 
 When i start to learn believe me I had zero knowledge any technology even i also didn't know what is Devops, IOT , hadoob , big data and lots of things when i started to learn. But I aware from lots of technologies because of Vimal Daga sir. I would like to give thousands of thank you to Vimal Daga Sir who also taking a great initiative "Making India".
 Thank you so much sir 
+
+
 
 
 My Docker project

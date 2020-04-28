@@ -62,4 +62,33 @@ Do note that there is no need to use this mechanism to create the root superuser
 
 **MYSQL_ONETIME_PASSWORD**
 Sets root (not the user specified in MYSQL_USER!) user as expired once init is complete, forcing a password change on first login. NOTE: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
+
+### General syntax of MySQL
+- docker run -it -e MYSQL_ROOT_PASSWORD=(any password you like) -e MYSQL_USER=(any user name) -e MYSQL_PASSWORD=(any password(recommended not to use root password) -e MYSQL_DATABASE=(any database name) --name dbos(give any container name) mysql:5.7
+##### Note:- 
+1. you need MySQL client to login inside MySql database then you can install it by using yum/dnf command
+- dnf install mysql
+2. For cheaking your IP of MySQL use this command
+- docker inspect mysql | grep IP                 
+3. Use this to login inside database
+- mysql -h **Ip_Of_MySQl** -u **ghost** -p**redhat**     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   

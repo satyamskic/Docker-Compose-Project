@@ -27,10 +27,8 @@ It uses popular express that is it's server and for a database you can select be
  - **systemctl stop firewalld**
 2. Start your Docker
 -  **systemctl start docker**
-3. Add images of **MySQL** and **Ghost** in your **Docker**. For this....use commands given below
--  For MySQL  
-  -  **docker pull mysql:5.7**
--  For Ghost
-  -  **docker pull ghost:1-alpine**
+3. Add images of **MySQL** and **Ghost** in your **Docker**. For this....use these commands given below
+      -  **docker pull mysql:5.7**
+      -  **docker pull ghost:1-alpine**
   
   

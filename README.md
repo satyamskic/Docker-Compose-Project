@@ -79,6 +79,7 @@ Create a data directory on a suitable volume on your host system, e.g. /my/own/d
 Start your mysql container like this:
 
   - $ docker run --name some-mysql -v **/my/own/datadir:/var/lib/mysql** -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
 The **-v /my/own/datadir:/var/lib/mysql** part of the command mounts the **/my/own/datadir** directory from the underlying host system as **/var/lib/mysql** inside the container, where MySQL by default will write its data files.
 
 

@@ -134,6 +134,9 @@ In docker as soon as we terminate an container our whole data inside that contai
 There are many images in Docker which needs some pre-defined environment variables to run. That's why we need to pass these variables.
 Before launch the servies behind the scence, docker-compose runs first script you pass inside environment varriable then it starts our services.
 
+**ports**
+
+When we go to browser any try to access our service(like ghost) which is running inside our container, then by default it works at port number 2368 but client or You can't access the directly because service is running inside container. So you can do one thing, whenever client or you go to port no 8080 (you can choose any port no between 1 to 65000 ) so 8080 -> 2368 ( 8080 connect to 2368 ) .Port number use when multiple programs runs over same IP address. the best way to understand port is to think of the postal system.
 
 
 

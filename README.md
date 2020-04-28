@@ -4,7 +4,7 @@ Hi , I'm Satyam Kumar
 
 
 
-I have successfully completed the Docker  Part of devops ) training under guidance of Vimal Daga sir.
+I have successfully completed the Docker  (Part of devops) training under guidance of Vimal Daga sir.
 
 
 

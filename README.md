@@ -4,7 +4,7 @@ Hi , I'm **Satyam Kumar**
 
 
 
-I have successfully completed the **Docker**  (Part of devops) training under guidance of **Vimal Daga sir**.
+I have successfully completed the **Docker Training**  (Part of devops) under guidance of **Vimal Daga sir**.
 
 
 
@@ -24,12 +24,12 @@ It uses popular express that is it's server and for a database you can select be
 
 # Steps you have to follow to setup Environment
 1. First disble/stop **firewall** security in your operating system because it block some network stuffs. But remember that it is not good practice to disabling/stoping security, For stoping firewalld use command 
-     - **systemctl stop firewalld**
+     - `systemctl stop firewalld`
 2. Start your Docker
-     -  **systemctl start docker**
+     -  `systemctl start docker`
 3. Add images of **MySQL** and **Ghost** in your **Docker**. For this....use these commands given below
-      -  **docker pull mysql:5.7**
-      -  **docker pull ghost:1-alpine**
+      -  `docker pull mysql:5.7`
+      -  `docker pull ghost:1-alpine`
 4. After this, you need to use these images. How can we these images, let's discuss.........
 
 # How to use mysql image
@@ -40,7 +40,7 @@ For more information and related downloads for MySQL Server and other MySQL prod
 
 **Start a mysql server instance**
 Starting a MySQL instance is simple:
-- $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+- ``$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag``
 ### Environment Variables
 When you start the mysql image, you can adjust the configuration of the MySQL instance by passing one or more environment variables on the docker run command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
 **MYSQL_ROOT_PASSWORD**

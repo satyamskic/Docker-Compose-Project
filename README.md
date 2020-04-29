@@ -163,7 +163,7 @@ Looked this images carefully..................................
 
 **version:**
 
-- In each version the style and syntax are different. I used version 3.1 cause it's easy to compose than other versions and you have to mention it within sigle cote
+In each version the style and syntax are different. I used version 3.1 cause it's easy to compose than other versions and you have to mention it within sigle cote
 
 **services:**
 

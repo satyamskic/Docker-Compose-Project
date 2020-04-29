@@ -64,21 +64,21 @@ Do note that there is no need to use this mechanism to create the root superuser
 Sets root (not the user specified in MYSQL_USER!) user as expired once init is complete, forcing a password change on first login. NOTE: This feature is supported on MySQL 5.6+ only. Using this option on MySQL 5.5 will throw an appropriate error during initialization.
 
 ### General syntax of MySQL
-- docker run -it -e MYSQL_ROOT_PASSWORD=(any password you like) -e MYSQL_USER=(any user name) -e MYSQL_PASSWORD=(any password(recommended not to use root password) -e MYSQL_DATABASE=(any database name) --name dbos(give any container name) mysql:5.7
+- `docker run -it -e MYSQL_ROOT_PASSWORD=(any password you like) -e MYSQL_USER=(any user name) -e MYSQL_PASSWORD=(any password(recommended not to use root password) -e MYSQL_DATABASE=(any database name) --name dbos(give any container name) mysql:5.7`
 ##### Note:- 
 1. you need MySQL client to login inside MySQL database then you can install it by using yum/dnf command
-- dnf install mysql
+- `dnf install mysql`
 2. For cheaking your IP of MySQL use this command
-- docker inspect mysql | grep IP                 
+- `docker inspect mysql | grep IP`                 
 3. Use this command to login inside database
-- mysql -h **Ip_Of_MySQl** -u **ghost** -p**redhat**     
+- `mysql -h **Ip_Of_MySQl** -u **ghost** -p**redhat**`     
 ### MySQL Volume
 It is always good practice to creating volume of MySQL because it store the data permanent(persistent). If any case you deleted container but you won't loose your databases. 
 Create a data directory on a suitable volume on your host system, e.g. /my/own/datadir.
 
 Start your mysql container like this:
 
-  - $ docker run --name some-mysql -v **/my/own/datadir:/var/lib/mysql** -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+  - `$ docker run --name some-mysql -v **/my/own/datadir:/var/lib/mysql** -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag`
 
 The **-v /my/own/datadir:/var/lib/mysql** part of the command mounts the **/my/own/datadir** directory from the underlying host system as **/var/lib/mysql** inside the container, where MySQL by default will write its data files.
 
@@ -102,7 +102,7 @@ To know more about ghost please visit site given below
 # Docker compose up
 
 **If you want that whenever you want Ghost service locally then you have to write all code again and again, In case of crash or stop working service due to any cause then you have to again write full command or code and again launch service . But this problam can be solved very easily. We can launched both MySQL as well as ghost by one click................... for this , you have to create a file named as *docker-compose.yml* and write your code inside it and run this file by using this command**
-   - docker-compose up  
+   - `docker-compose up`  
   
   
   
@@ -111,11 +111,11 @@ To know more about ghost please visit site given below
   ![]( https://github.com/satyamskic/Docker-Compose-Project/blob/master/3.png)
  
 ### Note
-You can create and edit this file using vim editor. For that use **vim docker-compose.yml** . Remember the file name should always be docker-compose.yml.
+You can create and edit this file using vim editor. For that use `vim docker-compose.yml` . Remember the file name should always be docker-compose.yml.
 
 **To varify that your services running or not, open new window terminal and type command given below**
    
-    - docker ps
+    - `docker ps`
 
 
 
@@ -130,7 +130,7 @@ Looked this images carefully..................................
 **To access ghost service cheak your IP address of your base OS and go to browser and type *IP_OF_BaseOS:PORT.No* and access your service**
 1. Cheak your IP by this command
   
-     - ifconfig enp0s3
+     - `ifconfig enp0s3`
 2. Go to browser( like google crome or firefox ) and access
 
 Looked this images carefully..................................

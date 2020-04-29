@@ -162,32 +162,32 @@ Looked this images carefully..................................
 
 
 **version:**
-  -In each version the style and syntax are different. I used version 3.1 cause it's easy to compose than other versions and you have to mention it within sigle cote
+  - In each version the style and syntax are different. I used version 3.1 cause it's easy to compose than other versions and you have to mention it within sigle cote
 
 **services:**
  
-  -In docker-compose.yml file we have to write all services which we want to run by one click only.
+  - In docker-compose.yml file we have to write all services which we want to run by one click only.
 
 **container name:**
   
-  -I choose dbos and ghost as name of containers. You can choose your desire name . Docker-compose automatically the name for the containers using our defined container name.
+  - I choose dbos and ghost as name of containers. You can choose your desire name . Docker-compose automatically the name for the containers using our defined container name.
 
 **image and restart:**
   
-  -Image and restart these two key is used to specify which image we want to use and due to any reason if any of the container stops docker-compose will again restart it.
+  - Image and restart these two key is used to specify which image we want to use and due to any reason if any of the container stops docker-compose will again restart it.
 
 **volumes:**
   
-  -In docker as soon as we terminate an container our whole data inside that container destroyed. But if we want to make our data permanent then we have to use docker volume. Using the last volumes key we at first created two volumes. We know that MySQL and ghost stores their data inside which folder. We simply make those folders permanent by mounting these volumes. That means due to any reason if our container terminated our data will not loose.
+  - In docker as soon as we terminate an container our whole data inside that container destroyed. But if we want to make our data permanent then we have to use docker volume. Using the last volumes key we at first created two volumes. We know that MySQL and ghost stores their data inside which folder. We simply make those folders permanent by mounting these volumes. That means due to any reason if our container terminated our data will not loose.
 
 **environment:**
   
-  -There are many images in Docker which needs some pre-defined environment variables to run. That's why we need to pass these variables.
+  - There are many images in Docker which needs some pre-defined environment variables to run. That's why we need to pass these variables.
 Before launch the servies behind the scence, docker-compose runs first script you pass inside environment varriable then it starts our services.
 
 **ports**
   
-  -When we go to browser any try to access our service(like ghost) which is running inside our container, then by default it works at port number 2368 but client or You can't access the directly because service is running inside container. So you can do one thing, whenever client or you go to port no 8080 (you can choose any port no between 1 to 65000 ) so 8080 -> 2368 ( 8080 connect to 2368 ) .Port number use when multiple programs runs over same IP address. the best way to understand port is to think of the postal system.
+  - When we go to browser any try to access our service(like ghost) which is running inside our container, then by default it works at port number 2368 but client or You can't access the directly because service is running inside container. So you can do one thing, whenever client or you go to port no 8080 (you can choose any port no between 1 to 65000 ) so 8080 -> 2368 ( 8080 connect to 2368 ) .Port number use when multiple programs runs over same IP address. the best way to understand port is to think of the postal system.
 
 
 

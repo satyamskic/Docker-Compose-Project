@@ -1,10 +1,8 @@
 # Docker-Compose-Project
 
-Hi , I'm **Satyam Kumar**
+> Hi , I'm **Satyam Kumar**
 
-
-
-I have successfully completed the **Docker Training**  (Part of devops) under guidance of **Vimal Daga sir**.
+> I have successfully completed the **Docker Training**  (Part of devops) under guidance of **Vimal Daga sir**.
 
 
 

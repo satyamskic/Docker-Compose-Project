@@ -103,14 +103,55 @@ To know more about ghost please visit site given below
 
 **If you want that whenever you want Ghost service locally then you have to write all code again and again, In case of crash or stop working service due to any cause then you have to again write full command or code and again launch service . But this problam can be solved very easily. We can launched both MySQL as well as ghost by one click................... for this , you have to create a file named as *docker-compose.yml* and write your code inside it and run this file by using this command**
    - docker-compose up  
+  
+  
+  
+  Looked this images carefully..................................
+  
+  ![]( https://github.com/satyamskic/Docker-Compose-Project/blob/master/3.png)
  
 ### Note
 You can create and edit this file using vim editor. For that use **vim docker-compose.yml** . Remember the file name should always be docker-compose.yml.
+
+**To varify that your services running or not, open new window terminal and type command given below**
+   
+    - docker ps
+
+
+
+
+
+
+Looked this images carefully..................................
+![](https://github.com/satyamskic/Docker-Compose-Project/blob/master/4.png)
+
+
+
+**To access ghost service cheak your IP address of your base OS and go to browser and type *IP_OF_BaseOS:PORT.No* and access your service**
+1. Cheak your IP by this command
+  
+     - ifconfig enp0s3
+2. Go to browser( like google crome or firefox ) and access
+
+Looked this images carefully..................................
+
+   ![](https://github.com/satyamskic/Docker-Compose-Project/blob/master/6.png)
+   
+
+3. It will show like this
+
+Looked this images carefully..................................
+ 
+
+
+
+
 
 
 ## How to write docker-compose.yml file 
 
 ![](https://github.com/satyamskic/Docker-Compose-Project/blob/master/1.png)
+
 
 **version:**
 

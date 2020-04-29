@@ -141,6 +141,14 @@ Looked this images carefully..................................
 3. It will show like this
 
 Looked this images carefully..................................
+
+   ![](https://github.com/satyamskic/Docker-Compose-Project/blob/master/7.png)
+   
+   
+   ![](https://github.com/satyamskic/Docker-Compose-Project/blob/master/8.png)
+   
+   
+   ![](https://github.com/satyamskic/Docker-Compose-Project/blob/master/9.png)
  
 
 

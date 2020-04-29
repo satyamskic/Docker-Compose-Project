@@ -110,6 +110,8 @@ You can create and edit this file using vim editor. For that use **vim docker-co
 
 ## How to write docker-compose.yml file 
 
+![](https://github.com/satyamskic/Docker-Compose-Project/blob/master/1.png)
+
 **version:**
 
 - In each version the style and syntax are different. I used version 3.1 cause it's easy to compose than other versions and you have to mention it within sigle cote

@@ -100,8 +100,9 @@ To know more about ghost please visit site given below
 
 
 # Docker compose up
-
-**If you want that whenever you want Ghost service locally then you have to write all code again and again, In case of crash or stop working service due to any cause then you have to again write full command or code and again launch service . But this problam can be solved very easily. We can launched both MySQL as well as ghost by one click................... for this , you have to create a file named as *docker-compose.yml* and write your code inside it and run this file by using this command**
+```
+If you want that whenever you want Ghost service locally then you have to write all code again and again, In case of crash or stop working service due to any cause then you have to again write full command or code and again launch service . But this problam can be solved very easily. We can launched both MySQL as well as ghost by one click................... for this , you have to create a file named as *docker-compose.yml* and write your code inside it and run this file by using this command 
+```
    - `docker-compose up`  
   
   
@@ -115,7 +116,7 @@ You can create and edit this file using vim editor. For that use `vim docker-com
 
 **To varify that your services running or not, open new window terminal and type command given below**
    
-    - `docker ps`
+    - docker ps
 
 
 
